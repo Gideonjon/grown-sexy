@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background: rgb(253, 251, 251);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0.8rem 1.2rem;
+}
+.nav-link img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+}
+header .box-wrap{
+    display: flex;
+    box-shadow: 0px 0px 1px 0px;
+    align-items: center;
+    background: white;
+    padding: 0.9rem 0.8rem;
+    border-radius: 0.5rem;
+    width: fit-content;
+    height: fit-content;
+    font-size: 0.8rem;
+    gap:0.8rem
+}
+header .box-wrap a:nth-child(1){
+    border-right: 1px solid black; 
+    padding-right: 0.5rem;
+}
+header .box-wrap a:nth-child(2){
+    border-right: 1px solid black; 
+    padding-right: 0.5rem;
+}
+header .nav-link{
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    gap:0.6rem
+}
+header .box-wrap .btn button{
+    background-color: #a53305;
+    border: none;
+    font-size: 0.7rem;
+    padding: 0.3rem 0.3rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    color: white;
+    cursor: pointer;
+}
+header a{
+    text-decoration: none;
+    color: black;
+}
+header .nav-link .avatar{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 40%;
+    padding: 0.3rem;
+    gap:0.6rem;
+    background: white;
+}
+header .nav-link .avatar .drop{
+    transform:rotate(90deg);
+    user-select: none;
+}
+.hero-wrap{
+    background-image: url("../images/img19.png");
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size:cover;
+    height:100vh;
+    color:white;
+}
+.hero-wrap .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top:12rem;
+    gap:0.5rem
+}
+.hero-wrap .content p{
+    font-size: 1.3rem;
+}
+.hero-wrap .content .btn button{
+    cursor: pointer;
+    border-radius: 1rem;
+    padding: 0.5rem 0.7rem;
+    border:none;
+    background:#BF3902;
+    color: white;
+    font-size: 0.7rem;
+}
+.first-section{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    gap:0.8rem
+}
+.first-section .title{
+    display: flex;
+    flex-direction: column;
+    gap:0.4rem
+}
+.first-section .title h2{
+    font-size: 0.96rem;
+    font-weight:bold;
+}
+.first-section .title p{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.first-section .btns{
+    display: flex;
+    align-items: center;
+    gap:0.8rem
+}
+.first-section .btns button{
+    cursor: pointer;
+    border-radius: 1rem;
+    padding: 0.5rem 0.7rem;
+    border:1px solid grey;
+    background: transparent;
+    font-size: 0.7rem;
+}
+.mobile-header{
+    display: none;
+}
+.section-one .event-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    gap:3.5rem
+}
+.section-one .event-grid img{
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+.section-one .event-grid .box{
+    position: relative;
+    border-radius: 0.5rem;
+}
+.section-one .event-grid .box .name{
+    position: absolute;
+    left: 0;
+    right: 0 ;
+    bottom: 0;
+    background:rgba(173, 168, 168, 0.41);
+    box-shadow: 0 4px 30px rgba(146, 139, 139, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 0.5rem;
+    border:1px solid rgba(199, 196, 196, 0.54);
+    color:white;
+    font-size: 0.9rem;
+    padding-left: 0.8rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+}
+@media screen and (max-width:891px) {
+    .section-one .event-grid{
+        grid-template-columns: auto auto;
+        gap:7rem
+    }
+}
+@media screen and (max-width:650px) {
+    .section-one .event-grid{
+        gap:2rem
+    }
+}
+@media screen and (max-width:552px) {
+    .section-one .event-grid{
+        grid-template-columns: auto;
+        gap:2rem
+    }
+    .section-one .event-grid img{
+        width:280px;
+        height: 160px;
+    }
+}
+
+footer{
+    background:white;
+    border-top: 1px solid rgb(221, 217, 217);
+    padding-top:3rem;
+    padding-bottom: 0.6rem;
+    margin-top:5rem;
+    color: black;
+}
+footer .flex{
+    display: flex;
+    gap:10rem
+}
+footer .flex .other{
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem
+}
+footer .flex .other .btn{
+    border: 2px solid rgb(124, 124, 124);
+    width: fit-content;
+    height: fit-content;
+    border-radius:7rem;
+    padding: 0.6rem;
+}
+footer .flex .other .btn input{
+    outline: none;
+    width: 162px;
+    border: none;
+}
+footer .flex .other .btn input::placeholder{
+   color: black;
+}
+footer .flex .other .btn button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left:1rem;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+    font-size: 0.9rem;
+}
+footer .flex .right{
+    display: grid;
+    grid-template-columns:auto auto auto auto;
+    gap:6rem;
+    justify-content:center;
+    align-items: flex-start;
+    margin: 0 auto;
+}
+footer .flex .right .title{
+    font-weight: bold;
+    margin-bottom:0.6rem;
+}
+footer .flex .right .link1, .link2, .link3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    gap:1rem;
+    margin-bottom: 0.7rem;
+}
+
+.footer-bottom{
+    text-align: center;
+    font-size: 0.9rem;
+    padding-top: 4rem;
+}
+@media screen and (max-width:1185px){
+    footer .flex .right{
+        grid-template-columns:auto auto;
+    }
+}
+@media screen and (max-width:595px){
+    footer .flex .right{
+        grid-template-columns:auto auto;
+        gap:4rem
+    }
+}
+@media screen and (max-width:625px) {
+    header{
+        display: none;
+    }
+    .mobile-header{
+        display:flex;
+        justify-content: space-between;
+        padding: 0.7rem 0.8rem;
+    }
+}
+@media screen and (max-width:520px){
+    footer .flex .right{
+        grid-template-columns:auto;
+        gap:2rem
+    }
+    footer .flex .right .link1, .link2, .link3{
+        align-items: center;
+    }
+}

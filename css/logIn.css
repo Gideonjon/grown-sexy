@@ -1,0 +1,163 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url("../images/img39.png");
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+    color: white;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3rem 2rem ;
+}
+header .rights .flex{
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+header .rights .flex p{
+    font-size:0.8rem;
+}
+header .rights .flex {
+    text-decoration: none;
+    color: white;
+}
+header .rights .flex button{
+    background:transparent;
+    border: 2px solid whitesmoke;
+    font-size: 0.8rem;
+    color: white;
+    border-radius: 0.6rem;
+    padding: 0.3rem 0.8rem;
+    cursor:pointer;
+}
+.form-wrap{
+    height: 100vh;
+}
+.form-wrap form{
+    display: flex;
+    flex-direction: column;
+    background: rgba(214, 211, 211, 0.5);
+    /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+   border: 1px solid rgba(225, 255, 225, 0.18);
+    width: fit-content;
+    padding:1.1rem 1.7rem;
+    border-radius:0.4rem;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.form-wrap form input{
+    outline: none;
+    border: 2px solid white;
+    width: 320px;
+    color: white;
+    background: transparent;
+    padding: 0.5rem 0.6rem;
+    border-radius: 0.3rem;
+}
+.form-wrap form input::placeholder{
+    color: white;
+}
+.form-wrap form .list{
+    display: flex;
+    flex-direction: column;
+    gap:0.6rem
+}
+.form-wrap form .title{
+    margin-bottom:1.5rem;
+    font-size: 1.1rem;
+    padding-top: 0.3rem;
+}
+.form-wrap form .box{
+    position: relative;
+}
+.form-wrap form .box a{
+    position: absolute;
+    top:10px;
+    right:10px;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: white;
+}
+.check{
+    font-size: 0.84rem;
+}
+.err{
+    color: red;
+    font-size: 0.9rem;
+    padding: 0.1rem 0rem;
+}
+.form-wrap .btn button{
+    margin-top:1rem;
+    padding: 0.5rem 0.7rem;
+    background:#BF3902;
+    width: 320px;
+    color: white;
+    border: none;
+    border-radius: 0.8rem;
+    cursor: pointer;
+}
+.line-wrap{
+    font-size: 0.9rem;
+    margin:1.2rem 0rem;
+    display: flex;
+    user-select: none;
+    gap:0.2rem;
+    align-items: center;
+}
+.form-wrap .line-wrap .left, .right{
+    width:114px;
+    height:1px;
+    user-select: none;
+    background: white;
+}
+.form-wrap .btns{
+    display: flex;
+    flex-direction: column;
+    gap:0.6rem
+}
+.form-wrap .btns button{
+    width: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: transparent;
+    border-radius: 0.6rem;
+    border: 2px solid white;
+    color: white;
+    gap:0.4rem;
+    padding: 0.5rem 0rem;
+}
+.form-wrap .bottom{
+    display: flex;
+    flex-direction: column;
+    gap:0.2rem;
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 1.3rem;
+}
+@media screen and (max-width:400px) {
+    .form-wrap form{
+        padding:1.1rem 1rem;
+    }
+    .form-wrap form input{
+        width:270px
+    }
+    .form-wrap .line-wrap .left, .right{
+        width:85px
+    }
+    .form-wrap .btn button, .form-wrap .btns button{
+        width: 270px;
+    }
+}

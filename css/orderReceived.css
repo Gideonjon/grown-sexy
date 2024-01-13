@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background: rgb(253, 251, 251);
+}
+.mobile-header{
+    display: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0.8rem 1.2rem;
+}
+.nav-link img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+}
+header .box-wrap{
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 1px 0px;
+    background: white;
+    padding: 0.9rem 0.8rem;
+    border-radius: 0.5rem;
+    width: fit-content;
+    height: fit-content;
+    font-size: 0.8rem;
+    gap:0.8rem
+}
+header .box-wrap a{
+    font-size: 0.75rem;
+}
+header .box-wrap a:nth-child(1){
+    border-right: 1px solid black; 
+    padding-right: 0.5rem;
+}
+header .box-wrap a:nth-child(2){
+    border-right: 1px solid black; 
+    padding-right: 0.5rem;
+}
+header .nav-link{
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    gap:0.6rem
+}
+header .box-wrap .btn button{
+    background-color: #a53305;
+    border: none;
+    font-size: 0.7rem;
+    padding: 0.3rem 0.3rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    color: white;
+    cursor: pointer;
+}
+header a{
+    text-decoration: none;
+    color: black;
+}
+header .nav-link .avatar{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 40%;
+    padding: 0.3rem;
+    gap:0.6rem;
+    background: white;
+}
+header .nav-link .avatar .drop{
+    transform:rotate(90deg);
+    user-select: none;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    gap:1.6rem;
+    justify-content: center;
+    margin-top:2rem;
+    align-items: center;
+    text-align: center;
+}
+.wrapper h2{
+    font-size: 1.5rem;
+    color:#BF3902;
+    margin-bottom: 0.7rem;
+}
+.wrapper p{
+    font-size: 0.9rem;
+}
+.wrapper img{
+    width: 350px;
+}
+.con{
+    display: flex;
+    flex-direction: column;
+    gap:0.3rem
+}
+.wrapper button{
+    padding: 0.7rem 3rem;
+    border: none;
+    cursor: pointer;
+    background: #BF3902;
+    color: white;
+    border-radius: 1.1rem;
+}
+@media screen and (max-width:400px) {
+    .wrapper h2{
+        font-size: 1.2rem;
+    }
+    .wrapper p{
+        font-size: 0.85rem;
+    }
+    .wrapper img{
+        width: 310px;
+    }
+}
+@media screen and (max-width:600px){
+    header{
+        display:none;
+    }
+    .mobile-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:0.7rem 0.9rem;
+    }
+}

@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background: rgb(253, 251, 251);
+    overflow-x: hidden;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding:1.2rem 2rem;
+}
+header .right a{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+header .right button{
+    background: transparent;
+    border: 1.8px solid black;
+    cursor: pointer;
+    padding: 0.3rem 0.7rem;
+    border-radius: 0.7rem;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap:0.6rem;
+    justify-content: center;
+    margin:0 auto;
+    margin-top:0.4rem;
+}
+.header h2{
+    font-weight: bold;
+    font-size: 2.2rem;
+}
+.header .sub1{
+    font-size: 0.9rem;
+}
+.header .sub2{
+    padding: 0.4rem;
+    font-size: 0.8rem;
+    border-radius: 0.3rem;
+    background:#dda791;
+}
+.switch-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:0.4rem;
+    font-size: 0.9rem;
+}
+.switch{
+    display: flex;
+    align-items: center;
+    gap:0.5rem;
+    margin: 1.1rem 0;
+}
+.switch{
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+.checkbox{
+    opacity: 0;
+    position: absolute;
+}
+.checkbox-label{
+    background-color: #BF3902;;
+    width: 50px;
+    height: 26px;
+    border-radius: 50px;
+    position: relative;
+    padding: 5px;
+    display: flex;
+    cursor: pointer;
+}
+.checkbox-label .ball{
+    background-color: #fff;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    left: 2px;
+    top:2px;
+    border-radius: 50%;
+   transition: transform 0.2s linear;
+}
+.checkbox:checked + .checkbox-label .ball{
+    transform: translateX(24px);
+}
+.sub-wrap{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    place-items: center;
+    justify-content: center;
+    gap:2.5rem;
+    margin-top:2rem;
+}
+.sub-2{
+    padding: 0.4rem;
+    font-size: 0.8rem;
+    border-radius: 0.3rem;
+    display: flex;
+    gap:0.3rem;
+    align-items: center;
+    background:#dda791;
+}
+.sub-wrap .sub-card{
+    border-radius: 0.5rem;
+    width: 190px;
+    padding: 0.8rem;
+}
+.sub-wrap .silver, .Platinum{
+    border: 2px solid rgb(187, 185, 185);
+}
+.sub-wrap .gold{
+    border: 1.37px solid #BF3902;
+}
+.sub-card .head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 0.6rem;
+}
+.sub-card .head p:nth-child(1){
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.sub-card .list{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem;
+    gap:1rem
+}
+.sub-card .list .flex{
+    display: flex;
+    gap:0.8rem
+}
+.sub-card .amount{
+    margin-top: 0.8rem;
+    display: flex;
+    gap:0.4rem
+}
+.sub-card .amount p:nth-child(2){
+    font-size: 0.94rem;
+}
+.sub-card .amount .pay{
+    font-weight: bold;
+    font-size:1.2rem;
+}
+.sub-card .btn{
+    display: flex;
+    justify-content: center;
+    margin-top:1.1rem;
+}
+.sub-card .btn button{
+    padding: 0.3rem 2.5rem;
+    cursor: pointer;
+    text-transform: capitalize;
+    border: none;
+    border-radius: 1rem;
+}
+.silver .btn button, .Platinum .btn button{
+    color:#BF3902;
+    border:1px solid #BF3902;
+    background: transparent;
+}
+.gold .btn button{
+    background: #BF3902;
+    color: white;
+}
+.check{
+    font-size: 0.4rem;
+    font-weight: bolder;
+    border-radius: 50%;
+    background:  #BF3902;
+    color: white;
+    width: fit-content;
+    padding:3.5px;
+    height: fit-content;
+}
+.not-check{
+    font-size: 0.4rem;
+    font-weight: bolder;
+    border-radius: 50%;
+    background: rgb(179, 175, 175);
+    color: white;
+    width: fit-content;
+    padding:3.5px;
+    height: fit-content; 
+}
+.first-text, .second-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top:3rem;
+    gap:0.8rem
+}
+.first-text .title, .second-text .title{
+    font-size: 1.5rem;
+}
+.first-text .content{
+    display:flex;
+    flex-direction: column;
+    font-size: 0.96rem;
+    gap:0.3rem
+}
+.faq-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align:justify;
+    place-content: center;
+    gap:2.3rem;
+    margin-top: 1rem;
+}
+.faq-grid .box{
+    width: 410px;
+}
+.faq-grid .box .question{
+    font-weight: bold;
+    margin-bottom: 0.7rem;
+    font-size:1.1rem;
+}
+.faq-grid .box .answer{
+    font-size: 0.9rem;
+}
+.bottom-wrap{
+    margin-top:3rem;
+    background: #BF3902;
+    padding: 1.5rem 0rem;
+    width: 100%;
+    position: relative;
+}
+.bottom-wrap-mob{
+    margin-top:3rem;
+    display: none;
+    background: #BF3902;
+    color: white;
+    padding: 2.5rem 0rem;
+}
+.bottom-wrap img{
+    width: 90%;
+    height:370px;
+    display: grid;
+    place-items: center;
+    margin: 0  auto;
+    border-radius: 1rem;
+    object-fit: cover;
+}
+.bottom-wrap .content{
+    position: absolute;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap:0.3rem;
+    font-size: 1.4rem;
+    top:6rem;
+    left:8rem;
+}
+.bottom-wrap-mob .content{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap:0.3rem;
+    font-size: 1.3rem;
+}
+.bottom-wrap .content .btn button,
+.bottom-wrap-mob .content .btn button{
+    background: white;
+    cursor: pointer;
+    padding: 0.3rem 0.7rem;
+    color:#BF3902;
+    border: none;
+    border-radius: 0.7rem;
+}
+@media screen and (max-width:700px) {
+    .sub-wrap{
+        grid-template-columns: auto auto;
+    }
+    .header h2{
+        font-size: 1.7rem;
+    }
+}
+@media screen and (max-width:450px) {
+    .sub-wrap{
+        grid-template-columns: auto;
+    }
+    .bottom-wrap{
+        display: none;
+    }
+    .bottom-wrap-mob{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:900px) {
+    .faq-grid{
+        grid-template-columns: auto;
+    }
+    .faq-grid .box .question{
+        text-align: center;
+    }
+    .faq-grid .box .answer{
+        width:280px;
+        margin: 0 auto;
+    }
+}

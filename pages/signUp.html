@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/signUp.css">
+    <title>Sign up</title>
+</head>
+<body>
+    <header>
+        <div class="left">
+           <img src="../images/logo.png" alt="" width="40px">
+        </div>
+        <div class="rights">
+            <div class="flex">
+                <p>Already a user?</p>
+                <div class="btn">
+                    <a href="./login.html"><button>sign in</button></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="form-wrap">
+        <form>
+            <div class="title">
+                Sign Up
+            </div>
+            <div class="list">
+                <div class="box">
+                    <input type="email" placeholder="Email Address">
+                </div>
+                <div class="email-error err"></div>
+                <div class="box">
+                    <input type="password" placeholder="Password">
+                </div>
+                <div class="pass-error err"></div>
+                <div class="box">
+                    <input type="text" placeholder="Enter code" maxlength="5">
+                    <a href="#">Resend</a>
+                </div>
+                <div class="code-error err">the code you entered is wrong</div>
+                <div class="check">please check your email for verification code</div>
+            </div>
+            <div class="btn">
+                <button>continue with process</button>
+            </div>
+            <div class="line-wrap">
+                <div class="left"></div>
+                <p>or sign  up with</p>
+                <div class="right"></div>
+            </div>
+            <div class="btns">
+                <button>
+                    <div class="lefts">
+                        <img src="../images/go.png" alt="" width="18px" style="object-fit:cover ;">
+                    </div>
+                    <div class="rights">
+                        <p>sign up with Google</p>
+                    </div>
+                </button>
+                <button>
+                    <div class="lefts">
+                       <img src="../images/fb.png" alt="" width="18px" style="object-fit:cover ;">
+                    </div>
+                    <div class="rights">
+                        <p>sign up with Facebook</p>
+                    </div>
+                </button>
+            </div>
+            <div class="bottom">
+                <p>By signing up, you agree to our terms and privacy</p>
+                <p>Users that violate our terms will be kicked out.</p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

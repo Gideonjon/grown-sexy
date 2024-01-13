@@ -1,0 +1,355 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background: rgb(253, 251, 251);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0.8rem 1.2rem;
+}
+.nav-link img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+}
+header .box-wrap{
+    display: flex;
+    box-shadow: 0px 0px 1px 0px;
+    align-items: center;
+    background: white;
+    padding: 0.9rem 0.8rem;
+    border-radius: 0.5rem;
+    width: fit-content;
+    height: fit-content;
+    font-size: 0.8rem;
+    gap:0.8rem
+}
+header .box-wrap a:nth-child(1){
+    border-right: 1px solid black; 
+    padding-right: 0.5rem;
+}
+header .box-wrap a:nth-child(2){
+    border-right: 1px solid black; 
+    padding-right: 0.5rem;
+}
+header .nav-link{
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    gap:0.6rem
+}
+header .box-wrap .btn button{
+    background-color: #a53305;
+    border: none;
+    font-size: 0.7rem;
+    padding: 0.2rem 0.3rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    color: white;
+    cursor: pointer;
+}
+header a{
+    text-decoration: none;
+    color: black;
+}
+header .nav-link .avatar{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 40%;
+    padding: 0.3rem;
+    gap:0.6rem;
+    background: white;
+}
+header .nav-link .avatar .drop{
+    transform:rotate(90deg);
+    user-select: none;
+}
+.mobile-header{
+    display: none;
+}
+.checkout-card{
+    background: white;
+    box-shadow: 0px 0px 4px 0px;
+    width: fit-content;
+    padding:1rem;
+    border-radius: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    gap:1.3rem;
+}
+.checkout-card .title{
+    font-weight: bold;
+}
+.checkout-card .flex-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.checkout-card .flex-1 .first{
+    font-weight: bold;
+}
+.checkout-card .flex-1 .second{
+    display: flex;
+    align-items: center;
+    gap:0.4rem
+}
+.checkout-card .flex-1 button{
+    border: none;
+    cursor: pointer;
+    background: rgb(102, 100, 100);
+    border-radius: 0.2rem;
+    color: white;
+    padding: 0.2rem 0.4rem;
+}
+.checkout-card .flex-1 .count{
+    font-size: 0.9rem;
+}
+.checkout-card .flex-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.6rem;
+}
+.checkout-card .flex-2 .price{
+    font-weight: bold;
+}
+.checkout-card .box-2{
+    background: #BF3902;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.4rem;
+    border-radius: 0.5rem;
+    color: white;
+    gap:0.5rem;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+.checkout-card .box-2 .top{
+    display: flex;
+    font-size: 0.95rem;
+    justify-content: space-between;
+}
+.checkout-card img{
+    width: fit-content;
+    border-radius: 0.3rem;
+    object-fit: cover;
+    height: 170px;
+}
+.checkout-card .box-2 .bottom a{
+    color: white;
+    font-size: 0.86rem;
+}
+.checkout-card .all{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+}
+.checkout-card .btn{
+    margin: 0 auto;
+    margin-top: 0.5rem;
+}
+.checkout-card .btn button{
+    background: #BF3902;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.9rem;
+    padding: 0.9rem 7rem;
+}
+.checkout-card .date, .location{
+    font-size: 0.9rem;
+}
+.wrapper{
+    display: flex;
+    justify-content:center;
+    gap:8rem;
+    margin-top: 2rem;
+}
+.wrapper .split-1{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap:1rem
+}
+.split-1 .flex-bottom{
+    margin-top: 1rem;
+    display: flex;
+    gap:0.3rem;
+}
+.split-1 .flex-bottom p{
+    width: 400px;
+    font-size: 0.78rem;
+}
+.split-1 .details-flex{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    gap:1.3rem
+}
+.split-1 .details-flex .flex{
+    display: flex;
+}
+.split-1 .details-flex .flex .left{
+    display: flex;
+    gap:0.7rem
+}
+.split-1 .details-flex .flex .left .bottom{
+    display: flex;
+    flex-direction: column;
+    font-size:0.95rem;
+    gap:0.5rem
+}
+.split-1 .details-flex .flex .left .bottom .email, .card{
+    font-weight: bold;
+}
+.split-1 .details-flex .flex .right a{
+    color: black;
+    font-size: 0.9rem;
+}
+.order{
+    background: #BF3902;
+    color: white;
+    padding: 0.7rem 0.9rem;
+    width:100%;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.6rem;
+}
+footer{
+    background:white;
+    border-top: 1px solid rgb(221, 217, 217);
+    padding-top:3rem;
+    padding-bottom: 0.6rem;
+    margin-top:5rem;
+    color: black;
+}
+footer .flex{
+    display: flex;
+    gap:10rem
+}
+footer .flex .other{
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem
+}
+footer .flex .other .btn{
+    border: 2px solid rgb(124, 124, 124);
+    width: fit-content;
+    height: fit-content;
+    border-radius:7rem;
+    padding: 0.6rem;
+}
+footer .flex .other .btn input{
+    outline: none;
+    width: 162px;
+    border: none;
+}
+footer .flex .other .btn input::placeholder{
+   color: black;
+}
+footer .flex .other .btn button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left:1rem;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+    font-size: 0.9rem;
+}
+footer .flex .right{
+    display: grid;
+    grid-template-columns:auto auto auto auto;
+    gap:6rem;
+    justify-content:center;
+    align-items: flex-start;
+    margin: 0 auto;
+}
+footer .flex .right .title{
+    font-weight: bold;
+    margin-bottom:0.6rem;
+}
+footer .flex .right .link1, .link2, .link3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    gap:1rem;
+    margin-bottom: 0.7rem;
+}
+
+.footer-bottom{
+    text-align: center;
+    font-size: 0.9rem;
+    padding-top: 4rem;
+}
+@media screen and (max-width:1185px){
+    footer .flex .right{
+        grid-template-columns:auto auto;
+    }
+}
+@media screen and (max-width:595px){
+    footer .flex .right{
+        grid-template-columns:auto auto;
+        gap:4rem
+    }
+    header{
+        display: none;
+    }
+    .mobile-header{
+        display: flex;
+        justify-content: space-between;
+        padding:0.7rem 0.8rem;
+    }
+}
+@media screen and (max-width:520px){
+    footer .flex .right{
+        grid-template-columns:auto;
+        gap:2rem
+    }
+    footer .flex .right .link1, .link2, .link3{
+        align-items: center;
+    }
+}
+@media screen and (max-width:970px) {
+    .wrapper{
+        gap:1rem
+    }
+}
+@media screen and (max-width:845px) {
+    .wrapper{
+       display: grid;
+       grid-template-columns: auto;
+       align-items: center;
+       justify-content: center;
+       gap:2rem
+    }
+}
+@media screen and (max-width:530px){
+    .title h2{
+        font-size:1.2rem;   
+        margin-top: 1rem;
+    }
+    .phone{
+        font-size: 0.7rem;
+    }
+    .split-1 .flex-bottom p{
+        width: 250px;
+    }
+    .split-1 .sub-title{  
+        width: 250px;
+        font-size: 0.9rem;
+    }
+}

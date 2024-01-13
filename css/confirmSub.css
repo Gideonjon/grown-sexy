@@ -1,0 +1,163 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background: rgb(253, 251, 251);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding:1.2rem 2rem;
+}
+header .right a{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+header .right button{
+    background: transparent;
+    border: 1.8px solid black;
+    cursor: pointer;
+    padding: 0.3rem 0.7rem;
+    border-radius: 0.7rem;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap:0.6rem;
+    justify-content: center;
+    margin:0 auto;
+    margin-top:0.4rem;
+}
+.header h2{
+    font-weight: bold;
+    font-size: 2.2rem;
+}
+.header .sub1{
+    font-size: 0.9rem;
+}
+.header .sub2{
+    padding: 0.4rem;
+    font-size: 0.8rem;
+    border-radius: 0.3rem;
+    display: flex;
+    gap:0.3rem;
+    align-items: center;
+    background:#dda791;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    gap:1.3rem;
+    align-items:start;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+.wrapper .title h2{
+    font-size:1.4rem;
+    margin-bottom: 1rem;
+}
+.wrapper .flex{
+    display: flex;
+    justify-content: center;
+    gap:2rem;
+    margin: 0 auto;
+}
+.wrapper .flex .left{
+    display: flex;
+    gap:0.6rem;
+    flex-direction: column;
+}
+.boz{
+    box-shadow: 0px 0px 4px 0px;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+.wrapper .flex .left .box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1.2rem 0.6rem;
+    border-radius: 0.5rem;
+    width:360px;
+    background: white
+}
+.wrapper .flex .left .box .lefts .text-1{
+    font-weight: bold;
+}
+.wrapper .flex .left .box .right p{
+    font-size: 0.9rem;
+}
+.wrapper .flex .left .box .lefts{
+    display:flex;
+    align-items: center;
+    gap:0.5rem
+}
+.wrapper .flex .left .box .lefts .save{
+    background:#BF3902;
+    color:white;
+    padding: 0.4rem;
+    font-weight: bold;
+    font-size:0.6rem;
+    border-radius:0.8rem;
+}
+.wrapper .flex .left .box .lefts .check{
+    font-size: 0.6rem;
+    font-weight: bolder;
+    border-radius: 50%;
+    border: 1px solid black;
+    width: fit-content;
+    padding: 5.4px;
+    height: fit-content;
+}
+.wrapper .flex .right .card{
+    background: white;
+    box-shadow: 0px 0px 4px 0px;
+    display: flex;
+    flex-direction: column;
+    width: 290px;
+    border-radius: 0.5rem;
+    padding: 1.3rem 0.8rem;
+    margin-top:2rem;
+}
+.wrapper .flex .right .card .box{
+    display: flex;
+    justify-content: space-between;
+}
+.wrapper .flex .right .card .box .lefts{
+    display: flex;
+    flex-direction: column;
+    gap:0.2rem
+}
+.card .btn{
+    margin: 0 auto;
+    margin-top:1.2rem;
+}
+.card .btn button{
+    cursor: pointer;
+    background:#BF3902;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.4rem 7rem;
+    color: white;
+}
+@media screen and (max-width:700px) {
+    .wrapper .flex{
+        flex-direction: column;
+    }
+    .wrapper .flex .right .card{
+        margin: 0 auto;
+        margin-top:0.3rem;
+    }
+}
+@media screen and (max-width:380px) {
+    .wrapper .flex .left .box{
+        width: 308px;
+    }
+}

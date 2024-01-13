@@ -1,0 +1,347 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background: rgb(253, 251, 251);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0.8rem 1.2rem;
+}
+.nav-link img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+}
+header .box-wrap{
+    display: flex;
+    box-shadow: 0px 0px 1px 0px;
+    align-items: center;
+    background: white;
+    padding: 0.9rem 0.8rem;
+    border-radius: 0.5rem;
+    width: fit-content;
+    height: fit-content;
+    font-size: 0.8rem;
+    gap:0.8rem
+}
+header .box-wrap a{
+    font-size: 0.75rem;
+}
+header .box-wrap a:nth-child(1){
+    border-right: 1px solid black; 
+    padding-right: 0.5rem;
+}
+header .box-wrap a:nth-child(2){
+    border-right: 1px solid black; 
+    padding-right: 0.5rem;
+}
+header .nav-link{
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    gap:0.6rem
+}
+header .box-wrap .btn button{
+    background-color: #a53305;
+    border: none;
+    font-size: 0.7rem;
+    padding: 0.3rem 0.3rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    color: white;
+    cursor: pointer;
+}
+header a{
+    text-decoration: none;
+    color: black;
+}
+header .nav-link .avatar{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 40%;
+    padding: 0.3rem;
+    gap:0.6rem;
+    background: white;
+}
+header .nav-link .avatar .drop{
+    transform:rotate(90deg);
+    user-select: none;
+}
+.hero-wrap{
+    background-image: url("../images/img19.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color:white;
+}
+.hero-wrap .content{
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    padding-top:16rem;
+    gap:0.5rem
+}
+.modal{
+    position: absolute;
+    inset:0;
+    box-shadow: 0px 0px 1px 0px;
+    background: rgb(247, 245, 245);
+    height: fit-content;
+    margin:auto;
+    z-index:1;
+    width: fit-content;
+    border-radius: 1rem;
+}
+.modal .close-modal{
+   display: flex;
+   justify-content: end;
+   align-items: flex-end;
+   cursor: pointer;
+   font-size: 1.4rem;
+   padding-right: 0.9rem;
+   padding-top:0.5rem;
+}
+.modal.remove{
+    display: none;
+}
+.modal .content{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    gap:0.7rem
+}
+.modal .content .image img{
+    width:210px;
+    height: 150px;
+    object-fit: cover;
+}
+.modal .content .title p{
+    font-weight: bold;
+    font-size: 1.2ren;
+}
+.modal .content .txt{
+    font-size: 0.86em;
+    text-align: center;
+    width: 270px;
+}
+.modal .content .btn button{
+    border: none;
+    cursor: pointer;
+    padding: 0.7rem 1.1rem;
+    border-radius: 1.1rem;
+    background:#BF3902;
+    color: white;
+}
+.event-flex{
+    display: flex;
+   padding: 1rem 0;
+}
+.event-flex .left p{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.event-flex .right a{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    font-size: 0.8rem;
+}
+.event-grid img{
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+.event-grid{
+    display: grid;
+    grid-template-columns:auto auto auto;
+    justify-content: center;
+    margin: 0 auto;
+    gap:5rem
+}
+.event-grid .box{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap:0.7rem
+}
+.event-grid .box .head{
+    font-weight: bold;
+}
+@media screen and (max-width:891px) {
+.event-grid{
+        grid-template-columns: auto auto;
+    }
+}
+@media screen and (max-width:650px) {
+.event-grid{
+        gap:2rem
+    }
+    .event-grid{
+        grid-template-columns: auto;
+        gap:2rem
+    }
+    .event-flex{
+        gap: 2.5rem;
+    }
+    .event-grid img{
+        width: 260px;
+        height: 160px;
+    }
+}
+@media screen and (max-width:552px) {
+
+.event-grid img{
+        width: 230px;
+        height: 160px;
+    }
+.event-flex{
+    display: grid;
+    grid-template-columns: 50px 50px;
+}
+}
+.mobile-header{
+    display: none;
+}
+@media screen and (max-width:615px) {
+    header{
+        display: none;
+    }
+    .mobile-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.7rem 0.8rem;
+    }
+}
+.wrap{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    width: fit-content;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+}
+.wrap .event-flex{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+footer{
+    background:white;
+    border-top: 1px solid rgb(221, 217, 217);
+    padding-top:3rem;
+    padding-bottom: 0.6rem;
+    margin-top:5rem;
+    color: black;
+}
+footer .flex{
+    display: flex;
+    gap:10rem
+}
+footer .flex .other{
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem
+}
+footer .flex .other .btn{
+    border: 2px solid rgb(124, 124, 124);
+    width: fit-content;
+    height: fit-content;
+    border-radius:7rem;
+    padding: 0.6rem;
+}
+footer .flex .other .btn input{
+    outline: none;
+    width: 162px;
+    border: none;
+}
+footer .flex .other .btn input::placeholder{
+   color: black;
+}
+footer .flex .other .btn button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left:1rem;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+    font-size: 0.9rem;
+}
+footer .flex .right{
+    display: grid;
+    grid-template-columns:auto auto auto auto;
+    gap:6rem;
+    justify-content:center;
+    align-items: flex-start;
+    margin: 0 auto;
+}
+footer .flex .right .title{
+    font-weight: bold;
+    margin-bottom:0.6rem;
+}
+footer .flex .right .link1, .link2, .link3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    gap:1rem;
+    margin-bottom: 0.7rem;
+}
+
+.footer-bottom{
+    text-align: center;
+    font-size: 0.9rem;
+    padding-top: 4rem;
+}
+@media screen and (max-width:1185px){
+    footer .flex .right{
+        grid-template-columns:auto auto;
+    }
+}
+@media screen and (max-width:595px){
+    footer .flex .right{
+        grid-template-columns:auto auto;
+        gap:4rem
+    }
+    header{
+        display: none;
+    }
+}
+@media screen and (max-width:520px){
+    footer .flex .right{
+        grid-template-columns:auto;
+        gap:2rem
+    }
+    footer .flex .right .link1, .link2, .link3{
+        align-items: center;
+    }
+    .hero-wrap .content p{
+        font-size: 0.9rem;
+    }
+}
+@media screen and (max-width:550px) {
+    .modal{
+        width:287px;
+    }
+}

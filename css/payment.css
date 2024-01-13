@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background: rgb(253, 251, 251);
+    padding-bottom: 2rem;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding:1.2rem 2rem;
+}
+header .right a{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+header .right button{
+    background: transparent;
+    border: 1.8px solid black;
+    cursor: pointer;
+    padding: 0.3rem 0.7rem;
+    border-radius: 0.7rem;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap:0.6rem;
+    justify-content: center;
+    margin:0 auto;
+    margin-top:0.4rem;
+}
+.header h2{
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+.header .sub1{
+    font-size: 0.9rem;
+}
+.header .sub2{
+    padding: 0.4rem;
+    font-size: 0.8rem;
+    border-radius: 0.3rem;
+    background:#dda791;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    gap:5rem
+}
+.wrapper .left{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.2rem;
+    gap:0.5rem
+}
+.wrapper .left .title  h2{
+    font-size: 1.3rem;
+}
+.wrapper .left .flex-card{
+    display: flex;
+    gap:0.5rem;
+    margin-top: 0.6rem;
+}
+.wrapper .left .flex-card button{
+    border: none;
+    cursor: pointer;
+    font-size: 0.84rem;
+    border-radius: 0.8rem;
+    padding: 0.4rem 0;
+    width: 90px;
+}
+.wrapper .left .flex-card button:nth-child(1){
+    background:#BF3902;
+    color: white;
+}
+.wrapper .left .flex-card button:nth-child(2){
+    background: white;
+}
+.wrapper .left .wrap-n{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    gap:0.2rem
+}
+.wrapper .left .wrap-n .head-1{
+    font-weight: bold;
+}
+.sub-2{
+    padding: 0.4rem;
+    font-size: 0.8rem;
+    border-radius: 0.3rem;
+    display: flex;
+    gap:0.3rem;
+    align-items: center;
+    background:#dda791;
+}
+.wrapper .left .wrap-n .sub-text-1{
+    font-size: 0.9rem;
+}
+.wrapper .left .input-con{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:0.5rem
+}
+.wrapper .left .input-con input, .flex-wrap-2 input{
+    padding: 0.4rem 0.6rem;
+    outline: none;
+    border: 1.95px solid black;
+    border-radius:0.2rem;
+}
+.wrapper .left .input-con input::placeholder{
+    color: black;
+}
+.wrapper .left .input-con .Card-Number,
+.Card-Holder, .flex-wrap-2 input{
+    width: 400px;
+}
+.wrapper .left .input-con .flex{
+    display: flex;
+    gap:0.6rem
+}
+.wrapper .left .input-con .flex input{
+    width:194px;
+}
+.wrapper .left .head-2{
+    font-weight: bold;
+    margin:1rem 0;
+}
+.wrapper .left .flex-wrap-2{
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+    align-items: flex-start;
+}
+.flex-wrap-2 select{
+    width: 400px;
+    padding: 0.4rem 0.6rem;
+    background: white;
+    border-radius: 0.3rem;
+    border: 1.95px solid black;
+}
+.wrapper .left .box{
+    display: flex;
+    gap:0.3rem;
+    align-items: flex-start;
+    margin-top:0.6rem;
+}
+.wrapper .left .box p{
+    width:400px;
+    font-size: 0.8rem;
+}
+.card{
+    background: white;
+    box-shadow: 0px 0px 4px 0px;
+    display: flex;
+    flex-direction: column;
+    width:fit-content;
+    border-radius: 0.5rem;
+    padding: 1.3rem 0.8rem;
+    margin-top:2rem;
+}
+.wrapper .right .card .box{
+    display: flex;
+    justify-content: space-between;
+}
+.card a{
+    text-decoration: none;
+    color: #BF3902;
+    font-size: 0.9rem;
+}
+.wrapper .right .card .box .lefts{
+    display: flex;
+    flex-direction: column;
+    gap:0.2rem
+}
+.card .btn{
+    margin: 0 auto;
+    margin-top:1.2rem;
+}
+.card .btn button{
+    cursor: pointer;
+    background:#BF3902;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 4rem;
+    color: white;
+}
+@media screen and (max-width:800px) {
+    .wrapper{
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        gap:1rem;
+        place-items: center;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width:435px){
+    .wrapper .left .input-con .Card-Number,
+.Card-Holder, .flex-wrap-2 input,
+.flex-wrap-2 select{
+    width: 300px;
+}
+.wrapper .left .input-con .flex input{
+    width: 147px;
+}
+.wrapper .left .box p{
+    width:260px;
+    text-align: justify;
+}
+}

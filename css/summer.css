@@ -1,0 +1,505 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background: rgb(253, 251, 251);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0.8rem 1.2rem;
+}
+.nav-link img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+}
+header .box-wrap{
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 1px 0px;
+    background: white;
+    padding: 0.9rem 0.8rem;
+    border-radius: 0.5rem;
+    width: fit-content;
+    height: fit-content;
+    gap:0.8rem
+}
+header .box-wrap a{
+    font-size: 0.8rem;
+}
+header .box-wrap a:nth-child(1){
+    border-right: 1px solid black; 
+    padding-right: 0.5rem;
+}
+header .box-wrap a:nth-child(2){
+    border-right: 1px solid black; 
+    padding-right: 0.5rem;
+}
+header .nav-link{
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    gap:0.6rem
+}
+header .box-wrap .btn button{
+    background-color: #a53305;
+    border: none;
+    font-size: 0.7rem;
+    padding: 0.3rem 0.3rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    color: white;
+    cursor: pointer;
+}
+header a{
+    text-decoration: none;
+    color: black;
+}
+header .nav-link .avatar{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 40%;
+    padding: 0.3rem;
+    gap:0.6rem;
+    background: white;
+}
+header .nav-link .avatar .drop{
+    transform:rotate(90deg);
+    user-select: none;
+}
+.hero img{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+.mobile-header{
+    display: none;
+}
+.section-one{
+    margin-left: 1.5rem;
+    margin-top:2.4rem;
+}
+.section-one .flex{
+    display: flex;
+    gap:12rem
+}
+.section-one .flex .left .head-1{
+    font-size:0.7rem;
+    margin-bottom: 0.4rem;
+}
+.section-one .flex .left .head-2{
+    font-size:0.9rem;
+}
+.section-one .flex .left .text{
+    width: 400px;
+    font-size: 0.94rem;
+    margin-top: 0.4rem;
+    text-align: justify;
+}
+.section-one .flex .left .switch{
+    display: flex;
+    align-items: center;
+    gap:0.5rem;
+    margin: 1.1rem 0;
+}
+.switch{
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+.checkbox{
+    opacity: 0;
+    position: absolute;
+}
+.checkbox-label{
+    background-color: #BF3902;;
+    width: 50px;
+    height: 26px;
+    border-radius: 50px;
+    position: relative;
+    padding: 5px;
+    display: flex;
+    cursor: pointer;
+}
+.checkbox-label .ball{
+    background-color: #fff;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    left: 2px;
+    top:2px;
+    border-radius: 50%;
+   transition: transform 0.2s linear;
+}
+.checkbox:checked + .checkbox-label .ball{
+    transform: translateX(24px);
+}
+.map{
+    display: none;
+}
+.map.active{
+    display: block;
+}
+.map img{
+    width: 400px;
+    object-fit: cover;
+}
+.section-one .right .checkout-card{
+    background: white;
+    box-shadow: 0px 0px 4px 0px;
+    width: fit-content;
+    padding:1rem;
+    border-radius: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    gap:1.3rem;
+}
+.checkout-card .title{
+    font-weight: bold;
+}
+.checkout-card .flex-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.checkout-card .flex-1 .first{
+    font-weight: bold;
+}
+.checkout-card .flex-1 .second{
+    display: flex;
+    align-items: center;
+    gap:0.4rem
+}
+.checkout-card .flex-1 button{
+    border: none;
+    cursor: pointer;
+    background: rgb(102, 100, 100);
+    border-radius: 0.2rem;
+    color: white;
+    padding: 0.2rem 0.4rem;
+}
+.checkout-card .flex-1 .count{
+    font-size: 0.9rem;
+}
+.checkout-card .flex-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.6rem;
+}
+.checkout-card .flex-2 .price{
+    font-weight: bold;
+}
+.checkout-card .box-2{
+    background: #BF3902;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.4rem;
+    border-radius: 0.5rem;
+    color: white;
+    gap:0.5rem;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+.checkout-card .box-2 .top{
+    display: flex;
+    font-size: 0.95rem;
+    justify-content: space-between;
+}
+.checkout-card .box-2 .bottom a{
+    color: white;
+    font-size: 0.86rem;
+}
+.checkout-card .all{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+}
+.checkout-card .btn{
+    margin: 0 auto;
+    margin-top: 0.5rem;
+}
+.checkout-card .btn button{
+    background: #BF3902;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.9rem;
+    padding: 0.5rem 7rem;
+}
+.checkout-card .date, .location{
+    font-size: 0.9rem;
+}
+.section-two{
+    margin-left: 1.5rem;
+    margin-top: 1.4rem;
+}
+.section-two .title h2{
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+.section-two .content{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    font-size: 0.94rem;
+   gap:1.3rem;
+    text-align: justify;
+}
+.section-two .flex-wrap{
+    margin-top: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    gap:1.1rem
+}
+.section-two .flex-wrap .flex{
+    display: flex;
+    gap:1rem
+}
+.section-two .flex-wrap .flex .right{
+    display:flex;
+    flex-direction: column;
+    gap:0.5rem
+}
+.section-two .flex-wrap .flex .right .head{
+    font-weight: bold;
+}
+.section-two .flex-wrap .flex .right p{
+    width: 350px;
+}
+.section-three{
+    margin-left: 1.5rem;
+    margin-top: 2.2rem;
+}
+.section-three .title h2{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.section-three .slide{
+    width: 480px;
+    margin-top: 1.3rem;
+    display: flex;
+    gap:0.6rem;
+    overflow-x: scroll;
+}
+.section-three .slide{
+    scrollbar-width: thin;
+   scrollbar-darkshadow-color: lightgrey;
+   scroll-behavior: smooth;
+}
+.section-three .slide img{
+    width: 380px;
+    height: 300px;
+    border-radius: 0.6rem;
+}
+.section-four{
+    padding-left: 1.5rem;
+    background: white;
+    padding-bottom: 2rem;
+    width: 100%;
+    margin-top: 2.2rem;
+}
+.section-four .heads h2{
+    font-size: 0.98rem;
+   padding: 1.3rem 0;
+}
+.event-grid img{
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+.event-grid{
+    display: grid;
+    grid-template-columns:auto auto auto;
+    justify-content: center;
+    margin: 0 auto;
+    gap:5rem
+}
+.event-grid .box{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    gap:0.7rem
+}
+.event-grid .box .head{
+    font-weight: bold;
+}
+@media screen and (max-width:440px) {
+    .section-two .content,
+    .section-one .flex .left .text{
+        width:300px;
+    }
+    .section-two .flex-wrap .flex .right p{
+        font-size:0.9rem;
+        width: 210px;
+    }
+    .section-one,
+    .section-two,
+    .section-three,
+    .section-four{
+        margin-left:0rem;
+        padding: 0rem 0.7rem;
+    }
+    .section-three .slide{
+        width: 180px;
+    }
+    .section-three .slide img{
+        width: 150px;
+    }
+}
+@media screen and (max-width:891px) {
+.event-grid{
+        grid-template-columns: auto auto;
+    }
+}
+@media screen and (max-width:650px) {
+.event-grid{
+        gap:2rem
+    }
+    .event-grid{
+        grid-template-columns: auto;
+        gap:2rem
+    }
+    .event-grid img{
+        width: 260px;
+        height: 160px;
+    }
+}
+@media screen and (max-width:552px) {
+
+.event-grid img{
+        width: 230px;
+        height: 160px;
+    }
+    .mobile-header{
+       display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding:0.7rem 0.6rem;
+    }
+}
+footer{
+    background:white;
+    border-top: 1px solid rgb(221, 217, 217);
+    padding-top:3rem;
+    padding-bottom: 0.6rem;
+    margin-top:5rem;
+    color: black;
+}
+footer .flex{
+    display: flex;
+    gap:10rem
+}
+footer .flex .other{
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem
+}
+footer .flex .other .btn{
+    border: 2px solid rgb(124, 124, 124);
+    width: fit-content;
+    height: fit-content;
+    border-radius:7rem;
+    padding: 0.6rem;
+}
+footer .flex .other .btn input{
+    outline: none;
+    width: 162px;
+    border: none;
+}
+footer .flex .other .btn input::placeholder{
+   color: black;
+}
+footer .flex .other .btn button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left:1rem;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+    font-size: 0.9rem;
+}
+footer .flex .right{
+    display: grid;
+    grid-template-columns:auto auto auto auto;
+    gap:6rem;
+    justify-content:center;
+    align-items: flex-start;
+    margin: 0 auto;
+}
+footer .flex .right .title{
+    font-weight: bold;
+    margin-bottom:0.6rem;
+}
+footer .flex .right .link1, .link2, .link3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    gap:1rem;
+    margin-bottom: 0.7rem;
+}
+
+.footer-bottom{
+    text-align: center;
+    font-size: 0.9rem;
+    padding-top: 4rem;
+}
+@media screen and (max-width:493px) {
+    .section-three .slide{
+        width:300px;
+    }
+    .section-three .slide img{
+        width: 220px;
+        object-fit: cover;
+    }
+}
+@media screen and (max-width:915px) {
+    .section-one .flex{
+        gap:3rem
+    }
+}
+@media screen and (max-width:770px) {
+    .section-one .flex{
+       flex-direction: column;
+    }
+    .map img{
+        width: 300px;
+    }
+}
+@media screen and (max-width:1185px){
+    footer .flex .right{
+        grid-template-columns:auto auto;
+    }
+}
+@media screen and (max-width:595px){
+    footer .flex .right{
+        grid-template-columns:auto auto;
+        gap:4rem
+    }
+    header{
+        display: none;
+    }
+}
+@media screen and (max-width:520px){
+    footer .flex .right{
+        grid-template-columns:auto;
+        gap:2rem
+    }
+    footer .flex .right .link1, .link2, .link3{
+        align-items: center;
+    }
+}
